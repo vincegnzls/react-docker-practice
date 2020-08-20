@@ -1,0 +1,9 @@
+sudo: required
+services:
+    - docker
+
+before_install:
+    - docker build -t vincegnzls/react-docker-practice -f Dockerfile.dev .
+
+script:
+    - docker run vincegnzls/react-docker-practice npm run test -- --coverage
