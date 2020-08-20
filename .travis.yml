@@ -6,4 +6,4 @@ before_install:
     - docker build -t vincegnzls/react-docker-practice -f Dockerfile.dev .
 
 script:
-    - docker run vincegnzls/react-docker-practice npm run test -- --coverage
+    - docker run -e CI=true vincegnzls/react-docker-practice npm run test
