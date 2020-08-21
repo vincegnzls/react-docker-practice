@@ -12,7 +12,7 @@ deploy:
     provider: elasticbeanstalk
     region: "ap-southeast-1" #aws region
     app: "react-docker-practice" #ebs application name
-    env: "ReactDockerPractice-env" #ebs environment name
+    env: "ReactDockerPractice-env-1" #ebs environment name
     bucket_name: "elasticbeanstalk-ap-southeast-1-913171412485" #s3 bucket name
     bucket_path: "react-docker-practice"
     on:
